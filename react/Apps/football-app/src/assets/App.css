@@ -1,0 +1,81 @@
+
+.App {
+  text-align: center;
+  width: 400px;
+  background-color: #FFF;
+    font-size: 1.2em;
+    margin-top: 50px
+
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.App-header {
+  background-color: #111;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.App-intro {
+  font-size: large;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+  font-size: 1.2em;
+
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.scorebox{
+  background-color: red;
+  width:inherit;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1px;
+}
+
+.score{
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #222;
+  margin-top: 25px;
+}
+
+.result{
+  background-color:#131353;
+  border-radius: 8px;
+  padding-right: 4px;
+  padding-left: 4px;
+  color: #f0f0f0;
+
+}
+
+.table{
+  background-color: green;
+  width:inherit;
+  min-height: 600px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1px;
+
+}
