@@ -5,9 +5,19 @@ class Score extends Component {
   render() {
     return (
       <div className="score">
-        <span>{this.props.team1}</span>
+        <div className="team">
+          <a href="/" className="logo">
+          </a>
+          {this.props.team1}
+        </div>
         <span className="result"> 0 - 5 </span>
-        <span>Team 2</span>
+        <div className="team">
+          <a href="/" className="logo">
+          </a>
+          ABL
+        </div>
+        <div>
+        </div>
       </div>
     );
   }

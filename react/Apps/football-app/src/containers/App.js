@@ -12,17 +12,46 @@ class App extends Component {
 
 componentWillMount(){
   this.props.fetchScores()
+
+  this.state = {
+    page: 'scorebox',
+    one: true,
+    two: false,
+  };
+}
+onClick(){
+  this.setState({
+    page: 'scorebox',
+    one: true,
+    two: false,
+})
+}
+onClick2(){
+  this.setState({
+    page: 'table',
+    one: false,
+    two: true,
+   })
 }
   render() {
+    let code = <ScoreBox />;
+
+  if(this.state.page=='scorebox'){
+      code = <ScoreBox />
+
+    }
+  if(this.state.page=='table'){
+      code = <Table />
+
+    }
     return (
       <div className="App">
         <div className="App-header">
-          <h4>Scores</h4>
-          <h4>Standings</h4>
+          <a className={this.state.one ? 'selected' : 'unselected'} id="one" onClick={this.onClick.bind(this)} >Scores</a>
+          <a className={this.state.two ? 'selected' : 'unselected'} id="two" onClick={this.onClick2.bind(this)} >Standings</a>
         </div>
         <div className='App-intro'>
-          <ScoreBox />
-          <Table />
+        {code}
         </div>
       </div>
     );

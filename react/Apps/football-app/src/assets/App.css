@@ -1,31 +1,49 @@
 
 .App {
   text-align: center;
-  width: 400px;
+  width: 320px;
   background-color: #FFF;
-    font-size: 1.2em;
-    margin-top: 50px
-
-
+  font-size: 1.2em;
+  margin-top: 50px;
+  border:1px solid #d1d1d1;
+  border-radius: 2px;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
 }
+.logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url('fc-barcelona-rugby.svg');
+  background-size: 50px 50px;
+}
 
 .App-header {
-  background-color: #111;
-  height: 50px;
+  background-color: #444;
+  height: 35px;
   color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+.unselected{
+  background-color: #444;
+  height: 100%;
+  width: 100%;
+}
+.selected{
+  background-color: red;
+  color: #222;
+  height: 100%;
+  width: 100%;
+}
 
 .App-intro {
   font-size: large;
-  background-color: tomato;
+  background-color: #fff;
   display: flex;
   justify-content: center;;
   align-items: center;
@@ -39,7 +57,7 @@
 }
 
 .scorebox{
-  background-color: red;
+  background-color: inherit;
   width:inherit;
   min-height: 600px;
   display: flex;
@@ -50,21 +68,37 @@
 }
 
 .score{
-  width: 280px;
+  background-color: #fff;
+  width: 220px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: #222;
   margin-top: 25px;
+  border-bottom: 1px solid #e1e1e1
+
 }
 
 .result{
-  background-color:#131353;
+  background-color:white;
   border-radius: 8px;
   padding-right: 4px;
   padding-left: 4px;
-  color: #f0f0f0;
+  color: #555;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+
+}
+.team{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
 }
 
 .table{
