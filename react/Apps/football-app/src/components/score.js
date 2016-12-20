@@ -12,11 +12,12 @@ class Score extends Component {
         </div>
         <span className="result"> 0 - 5 </span>
         <div className="team">
-          <a href="/" className="logo">
-          </a>
+          <a href="/" className="logo" />
           ABL
         </div>
-        <div>
+        <div className="rightpart">
+            <a href="/">live</a>
+            <a href="/">stats</a>
         </div>
       </div>
     );

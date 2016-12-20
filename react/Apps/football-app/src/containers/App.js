@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../assets/fball.png';
 import ScoreBox from '../components/scorebox';
 import Table from '../components/table';
 import { connect } from 'react-redux';
@@ -47,8 +46,8 @@ onClick2(){
     return (
       <div className="App">
         <div className="App-header">
-          <a className={this.state.one ? 'selected' : 'unselected'} id="one" onClick={this.onClick.bind(this)} >Scores</a>
-          <a className={this.state.two ? 'selected' : 'unselected'} id="two" onClick={this.onClick2.bind(this)} >Standings</a>
+          <a className={this.state.one ? 'selected' : 'unselected'} id="one" onClick={this.onClick.bind(this)} ><p>Scores</p></a>
+          <a className={this.state.two ? 'selected' : 'unselected'} id="two" onClick={this.onClick2.bind(this)} ><p>Standings</p></a>
         </div>
         <div className='App-intro'>
         {code}
