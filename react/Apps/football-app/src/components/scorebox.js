@@ -4,13 +4,18 @@ import '../assets/App.css';
 import { connect } from 'react-redux';
 
 class ScoreBox extends Component {
+
   render() {
-    console.log(this.props.scores)
+
+    const Scores = this.props.scores.map((score)=>{
+      return(
+        <Score id={score.id} HomeTeam={score.HomeTeam} AwayTeam={score.AwayTeam} FTHG={score.FTHG} FTAG={score.FTAG}/>
+      );
+    })
     return (
-      <div className="scorebox">
-        <Score team1={this.props.scores} />
-        
-      </div>
+        <div className="scorebox">
+          {Scores}
+        </div>
     );
   }
 }
